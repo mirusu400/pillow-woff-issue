@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+    @font-face {
+        /* This has error on pillow; */
+        font-family: myFirstFont;
+        src:url("./fonts/Youth.woff2");
+    }
+    @font-face {
+        /* This has not error on pillow; */
+        font-family: mySecondFont;
+        src:url("./fonts/Minhye.woff");
+    }
+
+    .test1 {
+        font-family: myFirstFont;
+    }
+    .test2 {
+        font-family: mySecondFont;
+    }
+    </style>
+    </head>
+    <body>
+        <div class="test0">
+            Test Font 1
+        </div>
+        <div class="test1">
+            Error Font
+        </div>
+        <div class="test2">
+            Nice Font
+        </div>
+    
+    </body>
+</html>
