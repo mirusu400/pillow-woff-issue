@@ -11,7 +11,9 @@ print("Trying to get Font ...\t", end="...")
 try:
     font = ImageFont.truetype("Youth.woff2")
     print("Success")
+    os.remove("Youth.woff2")
 except Exception as e:
     print("Failed " + str(e))
-finally:
     os.remove("Youth.woff2")
+    raise e
+    
